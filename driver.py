@@ -27,7 +27,9 @@ if not os.path.exists("sounds/"):
     os.makedirs("sounds/")
 
 for key, value in notes.items():
-    wu.create_sound(value, int(framerate * seconds), "sounds/" + key + ".wav")
+    wu.create_sound(
+        value, int(framerate * seconds), "sounds/" + key + ".wav", framerate
+    )
 
 key_bindings = {
     "z": "C",
