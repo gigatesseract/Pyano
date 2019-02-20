@@ -42,7 +42,7 @@ key_bindings = {
 }
 
 
-window = pyglet.window.Window(width=100, height=100, title=)
+window = pyglet.window.Window(width=100, height=100)
 
 
 note = "hi"
